@@ -788,6 +788,7 @@ From the information retrieved, we know:
 We can find these results with a _detailed_ frequency table; that is, instead of using the command _table_ as we did before, we could try a more advanced function:
 
 ```{r advancedTable, warning=FALSE,results='asis', eval=FALSE}
+install.packages("summarytools")
 library(summarytools)
 freq(eduwa$High.Grade,style = 'rmarkdown')
 ```
